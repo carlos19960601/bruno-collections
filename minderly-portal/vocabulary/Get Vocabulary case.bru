@@ -1,0 +1,19 @@
+meta {
+  name: Get Vocabulary case
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{dockerUrl}}/v1/vocabulary/cases?name=apple
+  body: none
+  auth: none
+}
+
+params:query {
+  name: apple
+}
+
+headers {
+  Accept: application/json
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Search Glossary
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{localUrl}}/glossary/search?keyword=a
+  body: none
+  auth: none
+}
+
+params:query {
+  keyword: a
+}

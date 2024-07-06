@@ -1,0 +1,19 @@
+meta {
+  name: Search Vocabulary
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{dockerUrl}}/v1/vocabulary/search?keyword=a
+  body: none
+  auth: none
+}
+
+params:query {
+  keyword: a
+}
+
+headers {
+  Accept: application/json
+}

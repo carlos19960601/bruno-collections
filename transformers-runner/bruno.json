@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "transformers-runner",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

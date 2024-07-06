@@ -1,0 +1,21 @@
+meta {
+  name: Save Vocabulary History
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{dockerUrl}}/v1/vocabulary/history
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}
+
+body:json {
+  {
+      "name": "banana"
+  }
+}

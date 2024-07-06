@@ -1,0 +1,25 @@
+meta {
+  name: User Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: www.poine.com/minderly-admin-api/v1/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "alan@gamil.com",
+      "password": "123456"
+  }
+}
+
+tests {
+  test("set auth", function() {
+      const jsonData = res.getBody()
+      bru.setVar("minderly_auth", jsonData["data"]["accessToken"])
+  })
+}

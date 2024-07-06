@@ -1,0 +1,29 @@
+meta {
+  name: ----
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{localUrl}}/login
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  {
+      "password": "123456",
+      "email": "alan@gmail.com"
+  }
+}
+
+tests {
+  var jsonData = res.getBody();
+  var data = jsonData["data"];
+  bru.setVar("minderly_auth", data["accessToken"]);
+}

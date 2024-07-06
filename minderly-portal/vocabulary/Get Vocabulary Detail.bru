@@ -1,0 +1,19 @@
+meta {
+  name: Get Vocabulary Detail
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{dockerUrl}}/v1/vocabulary?name=apple
+  body: none
+  auth: none
+}
+
+params:query {
+  name: apple
+}
+
+headers {
+  Accept: application/json
+}

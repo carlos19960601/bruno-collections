@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "minderly-admin",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

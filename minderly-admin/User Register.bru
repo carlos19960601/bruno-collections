@@ -1,0 +1,18 @@
+meta {
+  name: User Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: www.poine.com/minderly-admin-api/v1/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "password": "123456",
+      "email": "alan@gmail.com"
+  }
+}

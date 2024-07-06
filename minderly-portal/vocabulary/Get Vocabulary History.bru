@@ -1,0 +1,15 @@
+meta {
+  name: Get Vocabulary History
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{dockerUrl}}/v1/vocabulary/history
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}
