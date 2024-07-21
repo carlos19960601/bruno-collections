@@ -1,0 +1,19 @@
+meta {
+  name: Upload
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/v1/upload
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(/Users/carlos/Downloads/English/Videos/albino.Friends S01.mp4)
+}
+
+vars:pre-request {
+  url: store.collie.io
+}

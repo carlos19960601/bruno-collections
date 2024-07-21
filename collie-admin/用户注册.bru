@@ -1,11 +1,11 @@
 meta {
-  name: User Register
+  name: 用户注册
   type: http
   seq: 1
 }
 
 post {
-  url: www.poine.com/minderly-admin-api/v1/register
+  url: {{local}}/v1/register
   body: json
   auth: none
 }
@@ -15,4 +15,8 @@ body:json {
       "password": "123456",
       "email": "alan@gmail.com"
   }
+}
+
+vars:pre-request {
+  local: http://127.0.0.1:8000
 }

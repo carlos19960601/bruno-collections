@@ -1,20 +1,24 @@
 meta {
-  name: User Login
+  name: 用户登录
   type: http
   seq: 1
 }
 
 post {
-  url: www.poine.com/minderly-admin-api/v1/login
+  url: {{local}}/v1/login
   body: json
   auth: none
 }
 
 body:json {
   {
-      "email": "alan@gamil.com",
+      "email": "alan@gmail.com",
       "password": "123456"
   }
+}
+
+vars:pre-request {
+  local: http://127.0.0.1:8000
 }
 
 tests {
