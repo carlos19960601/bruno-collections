@@ -1,0 +1,24 @@
+meta {
+  name: 上传文件
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/v1/upload
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  : 
+}
+
+body:multipart-form {
+  file: @file(/Users/zengqiang/Downloads/Spotify/Linking words.mp3)
+}
+
+vars:pre-request {
+  url: http://store.collie.io
+  local: http://127.0.0.1:8000
+}

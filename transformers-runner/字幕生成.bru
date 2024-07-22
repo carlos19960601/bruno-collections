@@ -1,5 +1,5 @@
 meta {
-  name: transcribe
+  name: 字幕生成
   type: http
   seq: 1
 }
@@ -16,9 +16,4 @@ params:query {
 
 headers {
   Content-Type: application/json
-}
-
-vars:pre-request {
-  url: http://transformers.collie.io
-  local: http://localhost:8000
 }

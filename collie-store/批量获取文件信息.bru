@@ -1,0 +1,28 @@
+meta {
+  name: 批量获取文件信息
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/v1/stores?fids=1,012dd612d2
+  body: json
+  auth: none
+}
+
+params:query {
+  fids: 1,012dd612d2
+}
+
+headers {
+  : 
+}
+
+body:multipart-form {
+  file: @file(/Users/zengqiang/Downloads/Spotify/Linking words.mp3)
+}
+
+vars:pre-request {
+  url: http://store.collie.io
+  local: http://127.0.0.1:8000
+}

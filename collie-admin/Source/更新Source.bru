@@ -1,0 +1,19 @@
+meta {
+  name: 更新Source
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{url}}/v1/source
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "<老友记> 第一季",
+    "cover": "1,012dd612d2"
+  }
+}

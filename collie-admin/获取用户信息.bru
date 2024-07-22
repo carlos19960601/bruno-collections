@@ -1,7 +1,19 @@
+meta {
+  name: 获取用户信息
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{local}}/v1/user
+  body: none
+  auth: none
+}
+
 headers {
   Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJDRzRzcVJVSU9MIiwiZXhwIjoxNzI5MzkyNzEwLCJuYmYiOjE3MjE2MTY3MTAsImlhdCI6MTcyMTYxNjcxMH0.DUtsczo_D4kNj9AnlrBS7Un-9_ermk7ALUryoQk8L8M
 }
 
-auth {
-  mode: none
+vars:pre-request {
+  local: http://127.0.0.1:8000
 }

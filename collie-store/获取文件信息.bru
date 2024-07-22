@@ -1,0 +1,28 @@
+meta {
+  name: 获取文件信息
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/v1/store/:fid
+  body: multipartForm
+  auth: none
+}
+
+params:path {
+  fid: 1,012dd612d2
+}
+
+headers {
+  : 
+}
+
+body:multipart-form {
+  file: @file(/Users/zengqiang/Downloads/Spotify/Linking words.mp3)
+}
+
+vars:pre-request {
+  url: http://store.collie.io
+  local: http://127.0.0.1:8000
+}

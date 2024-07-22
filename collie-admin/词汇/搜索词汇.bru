@@ -1,0 +1,15 @@
+meta {
+  name: 搜索词汇
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/v1/vocabulary/search?keyword=
+  body: none
+  auth: none
+}
+
+params:query {
+  keyword: 
+}
