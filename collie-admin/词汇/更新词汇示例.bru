@@ -1,10 +1,10 @@
 meta {
-  name: 创建词汇示例
+  name: 更新词汇示例
   type: http
-  seq: 3
+  seq: 4
 }
 
-post {
+put {
   url: {{url}}/v1/vocabulary/case
   body: json
   auth: none
@@ -12,6 +12,7 @@ post {
 
 body:json {
   {
+    "id": 1,
     "sourceId": 1,
     "name": "bridesmaid",
     "text": "or are we waiting for four wet bridesmaids?",

@@ -1,0 +1,21 @@
+meta {
+  name: 创建表达示例
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/v1/expression/case
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "expressionId":1,
+    "sourceId": 1,
+    "text": "Anyway, I just didn't know where to go, and I know you and I have drifted apart...",
+    "transText": "我不知道该去哪里 而且我知道我和你有点疏远了",
+    "video": "1,19fdf015ff"
+  }
+}

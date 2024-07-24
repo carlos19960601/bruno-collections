@@ -1,0 +1,31 @@
+meta {
+  name: 创建表达
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/v1/expression
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json, text/plain, */*
+  Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJDRzRzcVJVSU9MIiwiZXhwIjoxNzI5MzkyNzEwLCJuYmYiOjE3MjE2MTY3MTAsImlhdCI6MTcyMTYxNjcxMH0.DUtsczo_D4kNj9AnlrBS7Un-9_ermk7ALUryoQk8L8M
+  Connection: keep-alive
+  Origin: http://localhost:3000
+  Referer: http://localhost:3000/
+  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+}
+
+body:json {
+  {
+    "name": "关系疏远"
+  }
+}
+
+vars:pre-request {
+  local: http://127.0.0.1:8000
+}

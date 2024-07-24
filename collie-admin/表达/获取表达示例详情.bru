@@ -1,18 +1,23 @@
 meta {
-  name: 创建词汇示例
+  name: 获取表达示例详情
   type: http
-  seq: 3
+  seq: 6
 }
 
-post {
-  url: {{url}}/v1/vocabulary/case
+get {
+  url: {{url}}/v1/expression/case/:id
   body: json
   auth: none
 }
 
+params:path {
+  id: 1
+}
+
 body:json {
   {
-    "sourceId": 1,
+    "id": 1,
+    "source_id": 1,
     "name": "bridesmaid",
     "text": "or are we waiting for four wet bridesmaids?",
     "transText": "还是我们在等待四个湿漉漉的伴娘？",
