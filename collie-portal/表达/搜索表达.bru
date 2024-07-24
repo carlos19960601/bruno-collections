@@ -1,17 +1,17 @@
 meta {
-  name: Get Vocabulary Detail
+  name: 搜索表达
   type: http
   seq: 1
 }
 
 get {
-  url: {{dockerUrl}}/v1/vocabulary?name=apple
+  url: {{url}}/v1/expression/search?keyword=
   body: none
   auth: none
 }
 
 params:query {
-  name: apple
+  keyword: 
 }
 
 headers {

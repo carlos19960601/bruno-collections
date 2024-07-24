@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "minderly-portal",
+  "name": "collie-portal",
   "type": "collection",
   "ignore": [
     "node_modules",

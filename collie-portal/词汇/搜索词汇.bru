@@ -1,13 +1,17 @@
 meta {
-  name: Get Vocabulary History
+  name: 搜索词汇
   type: http
   seq: 1
 }
 
 get {
-  url: {{dockerUrl}}/v1/vocabulary/history
+  url: {{url}}/v1/vocabulary/search?keyword=br
   body: none
   auth: none
+}
+
+params:query {
+  keyword: br
 }
 
 headers {

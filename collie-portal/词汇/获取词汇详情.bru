@@ -1,17 +1,17 @@
 meta {
-  name: Get Vocabulary case
+  name: 获取词汇详情
   type: http
-  seq: 1
+  seq: 4
 }
 
 get {
-  url: {{dockerUrl}}/v1/vocabulary/cases?name=apple
+  url: {{url}}/v1/vocabulary/detail?name=bridesmaid
   body: none
   auth: none
 }
 
 params:query {
-  name: apple
+  name: bridesmaid
 }
 
 headers {

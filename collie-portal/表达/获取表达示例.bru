@@ -1,0 +1,19 @@
+meta {
+  name: 获取表达示例
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/v1/expression/cases/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 1
+}
+
+headers {
+  Accept: application/json
+}

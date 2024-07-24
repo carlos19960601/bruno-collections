@@ -1,17 +1,17 @@
 meta {
-  name: Search Vocabulary
+  name: 获取词汇信息
   type: http
-  seq: 1
+  seq: 3
 }
 
 get {
-  url: {{dockerUrl}}/v1/vocabulary/search?keyword=a
+  url: {{url}}/v1/vocabulary?name=bridesmaid
   body: none
   auth: none
 }
 
 params:query {
-  keyword: a
+  name: bridesmaid
 }
 
 headers {
