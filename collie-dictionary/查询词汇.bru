@@ -1,0 +1,16 @@
+meta {
+  name: 查询词汇
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/v1/dictionary/:lang/:entry
+  body: none
+  auth: none
+}
+
+params:path {
+  entry: crash
+  lang: en-cn
+}
