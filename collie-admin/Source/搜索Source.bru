@@ -1,0 +1,22 @@
+meta {
+  name: 搜索Source
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/v1/source?keyword=老
+  body: json
+  auth: none
+}
+
+params:query {
+  keyword: 老
+}
+
+body:json {
+  {
+    "name": "老友记 第一季",
+    "cover": "1,012dd612d2"
+  }
+}
