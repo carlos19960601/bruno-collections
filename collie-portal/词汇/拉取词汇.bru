@@ -1,0 +1,15 @@
+meta {
+  name: 拉取词汇
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{url}}/v1/vocabulary/pull?cursor=v
+  body: none
+  auth: none
+}
+
+params:query {
+  cursor: v
+}
