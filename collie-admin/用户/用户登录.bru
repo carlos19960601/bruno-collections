@@ -17,13 +17,9 @@ body:json {
   }
 }
 
-vars:pre-request {
-  local: http://127.0.0.1:8000
-}
-
 tests {
   test("set auth", function() {
       const jsonData = res.getBody()
-      bru.setVar("minderly_auth", jsonData["data"]["accessToken"])
+      bru.setVar("accessToken", jsonData["data"]["accessToken"])
   })
 }
