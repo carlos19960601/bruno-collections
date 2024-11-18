@@ -1,0 +1,17 @@
+meta {
+  name: 构建Episode字幕索引
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/v1/episode/subtitle
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "subtitleID": "1,238ef268af"
+  }
+}

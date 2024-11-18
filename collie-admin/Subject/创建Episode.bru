@@ -1,0 +1,20 @@
+meta {
+  name: 创建Episode
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/v1/episode
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "subjectID": 1,
+    "name": "老友记 S01E01",
+    "videoID": "5,05f5516f4d",
+    "subtitleID": "6,22b7690fc1"
+  }
+}

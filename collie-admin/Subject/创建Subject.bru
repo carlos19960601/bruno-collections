@@ -1,0 +1,19 @@
+meta {
+  name: 创建Subject
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url}}/v1/subject
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "老友记 第一季",
+    "cover": "5,05f5516f4d",
+    "subType": "tv"
+  }
+}

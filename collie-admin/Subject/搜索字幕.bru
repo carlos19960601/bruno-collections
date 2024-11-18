@@ -1,0 +1,21 @@
+meta {
+  name: 搜索字幕
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url}}/v1/episode/subtitle/search?query=crash on
+  body: json
+  auth: none
+}
+
+params:query {
+  query: crash on
+}
+
+body:json {
+  {
+    "subtitleID": "1,238ef268af"
+  }
+}

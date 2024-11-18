@@ -1,0 +1,23 @@
+meta {
+  name: 删除Subject
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{url}}/v1/subject/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "name": "老友记 第一季",
+    "cover": "5,05f5516f4d",
+    "subType": "tv"
+  }
+}

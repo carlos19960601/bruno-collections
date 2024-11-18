@@ -1,0 +1,24 @@
+meta {
+  name: 搜索Subject
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/v1/subject/search?subType=tv
+  body: json
+  auth: none
+}
+
+params:query {
+  subType: tv
+  ~keyword: 老
+}
+
+body:json {
+  {
+    "name": "老友记 第一季",
+    "cover": "5,05f5516f4d",
+    "subType": "tv"
+  }
+}
