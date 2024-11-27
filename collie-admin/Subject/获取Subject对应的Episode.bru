@@ -1,17 +1,17 @@
 meta {
-  name: 删除Subject
+  name: 获取Subject对应的Episode
   type: http
-  seq: 4
+  seq: 8
 }
 
-delete {
-  url: {{url}}/v1/subject/:id
+get {
+  url: {{url}}/v1/subjects/:id/episodes
   body: json
   auth: none
 }
 
 params:path {
-  id: 
+  id: 1
 }
 
 body:json {

@@ -1,0 +1,18 @@
+meta {
+  name: 构建示例字幕任务
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{url}}/v1/enqueue/example/subtitle/task
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 4,
+    "type": "vocabulary"
+  }
+}

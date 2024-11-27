@@ -1,21 +1,25 @@
 meta {
   name: 创建词汇示例
   type: http
-  seq: 4
+  seq: 8
 }
 
 post {
-  url: {{url}}/v1/vocabulary/case
+  url: {{url}}/v1/vocabularies/examples
   body: json
   auth: none
 }
 
 body:json {
   {
-    "sourceId": 1,
-    "name": "crash",
-    "text": "will you crash on the coach?",
-    "transText": "你要在沙发上过夜吗？",
-    "video": "3,1e3c914902"
+      "vocabulary": "bridesmaid",
+      "episodeId": 1,
+      "clipInfo": {
+          "clipBase": 58,
+          "clipStart": 57,
+          "clipEnd": 58,
+          "preOffset": 2000,
+          "postOffset": 700
+      }
   }
 }
