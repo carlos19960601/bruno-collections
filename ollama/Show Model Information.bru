@@ -1,0 +1,17 @@
+meta {
+  name: Show Model Information
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/api/show
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "llama3.1:latest"
+  }
+}

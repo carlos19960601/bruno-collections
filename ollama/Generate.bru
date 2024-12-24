@@ -1,0 +1,19 @@
+meta {
+  name: Generate
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/api/generate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "llama3.1",
+    "prompt": "Why is the sky blue?"
+  }
+  
+}

@@ -1,0 +1,18 @@
+meta {
+  name: List Local Models
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/api/tags
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "llama3.2",
+    "prompt": "Why is the sky blue?"
+  }
+}

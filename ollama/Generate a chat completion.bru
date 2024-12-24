@@ -1,0 +1,28 @@
+meta {
+  name: Generate a chat completion
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/api/chat
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "llama3.1",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an AI writing assistant that lengthens existing text. Use Markdown formatting when appropriate."
+      },
+      {
+        "role": "user",
+        "content": "The existing text is: In a remarkable display of skill and perseverance, a team of rescuers successfully extracted Ottavia Piana, a 32-year-old researcher, from the depths of the Bueno Fonteno cave in northern Italy. Piana had been trapped for 75 hours after suffering a fall while exploring an uncharted section of the cave system, located approximately 500 meters below the surface."
+      }
+    ],
+    "stream": false
+  }
+}
