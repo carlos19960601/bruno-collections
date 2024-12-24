@@ -24,6 +24,6 @@ body:json {
 
 tests {
   var jsonData = res.getBody();
-  var data = jsonData["data"];
-  bru.setVar("minderly_auth", data["accessToken"]);
+  var data = jsonData.data;
+  bru.setVar("accessToken", data.accessToken);
 }

@@ -1,13 +1,17 @@
 meta {
-  name: 创建Episode
+  name: 获取Episode
   type: http
-  seq: 5
+  seq: 9
 }
 
-post {
-  url: {{url}}/v1/episode
+get {
+  url: {{url}}/v1/episodes/:id
   body: json
   auth: none
+}
+
+params:path {
+  id: 1
 }
 
 body:json {

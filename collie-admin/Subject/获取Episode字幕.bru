@@ -1,0 +1,21 @@
+meta {
+  name: 获取Episode字幕
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{url}}/v1/episodes/:id/subtitle
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 1
+}
+
+body:json {
+  {
+    "subtitleID": "1,238ef268af"
+  }
+}
