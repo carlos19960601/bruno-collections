@@ -1,0 +1,18 @@
+meta {
+  name: 登录
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{manager_url}}/manager/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "guest",
+    "password": "guest"
+  }
+}

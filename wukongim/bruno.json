@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "wukongim",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

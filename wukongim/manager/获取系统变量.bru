@@ -1,0 +1,18 @@
+meta {
+  name: 获取系统变量
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{manager_url}}/varz
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "guest",
+    "password": "guest"
+  }
+}
