@@ -1,7 +1,7 @@
 meta {
   name: 上传文件
   type: http
-  seq: 2
+  seq: 5
 }
 
 post {
@@ -15,5 +15,5 @@ headers {
 }
 
 body:multipart-form {
-  file: @file(/Users/zengqiang/Downloads/Spotify/speech.mp3)
+  file: @file()
 }

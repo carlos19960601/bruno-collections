@@ -1,0 +1,19 @@
+meta {
+  name: 健康检查
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{url}}/v1/healthcheck
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Qiang Smith",
+    "email": "qiang@example.com",
+    "password": "pa55word"
+  }
+}

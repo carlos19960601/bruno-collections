@@ -1,0 +1,15 @@
+meta {
+  name: 激活用户
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{url}}/v1/users/activated
+  body: json
+  auth: none
+}
+
+body:json {
+  {"token": "OS2GLEUESFTXAY347RVWG5QM6I"}
+}
